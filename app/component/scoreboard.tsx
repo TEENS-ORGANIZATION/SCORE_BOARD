@@ -148,7 +148,7 @@ export default function ScoreBoard() {
               </h2>
 
               {/* SCORE */}
-              <p className="text-5xl font-bold my-4 text-white">{team.score}</p>
+              <p className="text-5xl font-bold my-4 text-white">{team.score} Pt</p>
 
               {/* CONTROLS */}
               <div className="flex gap-2">
