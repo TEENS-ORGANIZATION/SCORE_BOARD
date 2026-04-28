@@ -77,7 +77,7 @@ export default function ScoreBoard() {
       <div className="w-full max-w-2xl bg-[#2a2a2a] p-4 rounded-xl border border-white/10 mb-4">
         <p className="text-white text-sm mb-2">Add a team</p>
 
-        <div className="flex gap-2">
+        <div className="flex gap-2 md:items-center md:flex-row flex-col">
           <input
             type="text"
             value={text}
@@ -91,7 +91,7 @@ export default function ScoreBoard() {
 
           <button
             onClick={addTeam}
-            className="px-4 py-3 bg-black text-white rounded-lg flex items-center gap-1"
+            className="px-4 py-3 bg-black text-white rounded-lg flex items-center justify-center gap-1"
           >
             <MdAdd /> Add
           </button>
