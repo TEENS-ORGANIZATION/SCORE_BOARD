@@ -148,7 +148,14 @@ export default function ScoreBoard() {
               </h2>
 
               {/* SCORE */}
-              <p className="text-5xl font-bold my-4 text-white">{team.score} Pt</p>
+              <p
+                className={`text-5xl font-bold my-4`}
+                style={{
+                  color: team.color,
+                }}
+              >
+                {team.score} Pt
+              </p>
 
               {/* CONTROLS */}
               <div className="flex gap-2">
@@ -201,7 +208,7 @@ export default function ScoreBoard() {
 
           <button
             onClick={() => {
-                resetTeamsPoints()
+              resetTeamsPoints();
             }}
             className="bg-[#141414] text-white flex items-center p-3 rounded mt-3"
           >
